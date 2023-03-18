@@ -1,0 +1,17 @@
+#result{
+  display: none;
+  width: 80%;
+  text-align: center;
+  border-radius: 20px;
+}
+
+#shareResult {
+  background-color: beige;
+  width: 80%;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.resultName {
+  font-size: 20px;
+}

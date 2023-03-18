@@ -1,0 +1,91 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>login page</title>
+    <link rel="stylesheet" href="/css/bootstrap.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Noto+Sans+KR:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        font-family: "Nanum Gothic", sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <div style="text-align: center">
+      <img
+        src="{% static 'img/logo.png' %}"
+        alt="btnImages"
+        style="width: 300px; height: 120px; margin-top: 20%"
+      />
+      {% if adminlogin_session %}
+      <a
+        href="{%url 'mypage' admin%}"
+        style="text-decoration: none; color: black; padding-right: 100px"
+        target="_blank"
+        ><h1>admin</h1></a
+      >
+      {%else%}
+      <h1>admin</h1>
+      {%endif%}
+      <div
+        class="col-2"
+        style="
+          line-height: 3cm;
+          font-size: x-large;
+          text-align: center;
+          margin-top: 30px;
+        "
+      >
+        <div style="justify-content: center">
+          {% if adminlogin_session %}
+          <a
+            href="/accounts/logout"
+            style="
+              line-height: 5cm;
+              text-decoration: none;
+              color: black;
+              padding-right: 100px;
+            "
+            >LOGOUT</a
+          >
+          <a
+            href="{% url 'insert'%}"
+            style="
+              line-height: 5cm;
+              text-decoration: none;
+              color: black;
+              padding-right: 140px;
+            "
+            target="_blank"
+            >INSERT</a
+          >
+          {% else %}
+          <a
+            href="{%url 'adminlogin'%}"
+            style="
+              line-height: 5cm;
+              text-decoration: none;
+              color: black;
+              padding-right: 100px;
+            "
+            >LOGIN</a
+          >
+          {% endif %}
+          <a
+            href="{% url 'sort' '최신순' %}"
+            style="line-height: 5cm; text-decoration: none; color: black"
+            target="_blank"
+            >LIST</a
+          >
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

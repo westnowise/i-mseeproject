@@ -1,0 +1,95 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>login page</title>
+    <link rel="stylesheet" href="/css/bootstrap.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Noto+Sans+KR:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        font-family: "Nanum Gothic", sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="" method="POST">
+      {% csrf_token %}
+      <div style="text-align: center">
+        <a href="/">
+          <img
+            src="{% static 'img/logo.png' %}"
+            alt="btnImages"
+            style="width: 100px; height: 40px; margin-top: 2%"
+          />
+        </a>
+        <div
+          class="col-2"
+          style="
+            font-size: x-large;
+            text-align: center;
+            margin-top: 150px;
+            margin-bottom: 50px;
+          "
+        >
+          LOGIN
+        </div>
+        {% for form in forms %}
+        <div style="height: 50px">
+          <label for="{{form.id_for_label}}">{{ form.label }}</label>
+          {{ form }}
+        </div>
+        {% endfor %} {% if error %} {{ error }} {% endif %}
+
+        <button
+          style="
+            border: none;
+            background-color: white;
+            font-size: 15px;
+            width: 100px;
+            height: 50px;
+          "
+          type="submit"
+          name="login-submit"
+          value="login"
+        >
+          Sign In
+        </button>
+
+        <!-- <div style="text-align: center; line-height: 2cm;">
+                    <a style="margin-left: 10px;">ID</a>
+                    <input type = "text" 
+                    style = "width: 225px;
+                    height: 20px;
+                    border: 1px solid black;">
+                </div>
+                <div style ="text-align: center; line-height: 1cm;">
+                    <a>PW</a>
+                    <input type = "password" 
+                    style = "width: 225px;
+                    height: 20px;
+                    border: 1px solid black;
+                    text-align: left;">
+                </div>
+                <div>
+                    <a href="../Home/home.html" style = "text-decoration: none; color: black; line-height: 70px;"> Sign In </button>
+                </div> -->
+        <div>
+          <a style="font-size: small; color: gray; padding-right: 100px"
+            >New to I'm示 ?</a
+          >
+          <a
+            href="/accounts/signup"
+            style="text-decoration: none; color: black; line-height: 150px"
+            >Create an Account</a
+          >
+        </div>
+      </div>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,97 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>login page</title>
+    <link rel="stylesheet" href="/css/bootstrap.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Noto+Sans+KR:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        font-family: "Nanum Gothic", sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <div style="text-align: center">
+      <img
+        src="{% static 'img/logo.png' %}"
+        alt="btnImages"
+        style="width: 300px; height: 120px; margin-top: 20%"
+      />
+      <div
+        class="col-2"
+        style="
+          line-height: 3cm;
+          font-size: x-large;
+          text-align: center;
+          margin-top: 30px;
+        "
+      >
+        <!-- <a href="../Login/login.html" style = "line-height: 5cm; text-decoration: none; color: black; padding-right:100px;">LOGIN</a> -->
+        {% if login_session %}
+        <a
+          href="/accounts/logout"
+          style="
+            line-height: 5cm;
+            text-decoration: none;
+            color: black;
+            padding-right: 100px;
+          "
+          >LOGOUT</a
+        >
+        <a
+          href="/accounts/test"
+          style="
+            line-height: 5cm;
+            text-decoration: none;
+            color: black;
+            padding-right: 120px;
+          "
+          >TEST</a
+        >
+        {% else %}
+        <a
+          href="/accounts/login"
+          style="
+            line-height: 5cm;
+            text-decoration: none;
+            color: black;
+            padding-right: 120px;
+          "
+          >LOGIN</a
+        >
+        {% endif %} {% if login_session %}
+
+        <a
+          href="{% url 'sort' key %}"
+          style="line-height: 5cm; text-decoration: none; color: black"
+          target="_blank"
+          >LIST</a
+        >
+        {% else %}
+
+        <a
+          href="{% url 'sort' '최신순' %}"
+          style="line-height: 5cm; text-decoration: none; color: black"
+          target="_blank"
+          >LIST</a
+        >
+        {% endif %} {% comment %} {% if request.user.is_authenticated %}
+        <h3>로그인된 Username: {{request.user.name}}</h3>
+        <form action="{% url 'logout' %}" method="POST">
+          {% csrf_token %}
+          <input type="submit" value="Logout" />
+        </form>
+        {% else %}
+        <a href="{% url 'login' %}">Login</a>
+        {% endif %} {% endcomment %}
+      </div>
+    </div>
+  </body>
+</html>

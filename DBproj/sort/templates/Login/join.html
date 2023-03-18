@@ -1,0 +1,68 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>login page</title>
+    <link rel="stylesheet" href="/css/bootstrap.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Noto+Sans+KR:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        font-family: "Nanum Gothic", sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <form action=" " method="POST">
+      {% csrf_token %}
+      <div style="text-align: center; line-height: 1cm">
+        <a href="/">
+          <img
+            src="{% static 'img/logo.png' %}"
+            alt="btnImages"
+            style="width: 100px; height: 40px; margin-top: 2%"
+          />
+        </a>
+        <div
+          class="col-2"
+          style="
+            line-height: 3cm;
+            font-size: x-large;
+            text-align: center;
+            margin-top: 30px;
+          "
+        >
+          JOIN
+        </div>
+
+        {% for form in forms %}
+        <div style="height: 100px">
+          <label for="{{form.auto_id}}">{{ form.label }}</label>
+          {{ form }}
+        </div>
+        {% endfor %} {% for form in forms %} {{ form.errors }} {% endfor %}
+
+        <button
+          style="
+            border: none;
+            background-color: white;
+            font-size: 15px;
+            width: 100px;
+            height: 50px;
+            margin-bottom: 100px;
+          "
+          type="submit"
+          name="register-submit"
+          value="register"
+        >
+          signUp
+        </button>
+      </div>
+    </form>
+  </body>
+</html>
