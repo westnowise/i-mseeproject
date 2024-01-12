@@ -1,6 +1,5 @@
 ## I’ M示
-![스크린샷 2024-01-12 134117](https://github.com/westnowise/i-mseeproject/assets/98007431/20c80be3-debb-4e10-8188-df3290a7a407)
-
+![스크린샷 2024-01-12 134117](https://github.com/westnowise/i-mseeproject/assets/98007431/627e743f-9af6-448e-b7e3-9bf58158c92c)
 
 한서대학교 항공소프트웨어공학과 데이터베이스
 <br>
@@ -8,9 +7,14 @@
 
 ## 프로젝트 소개
 
-테스트를 통한 각 유저의 전시회 유형을 파악하고 해당 전시회를 추천하는 웹페이지
+테스트를 통한 각 유저의 전시회 유형을 파악하고, 해당 전시회를 추천하는 웹페이지
 
-
+## 내가 맡은 부분
+    accounts 담당
+    회원가입 시 테스트를 통한 회원의 유형 선별
+    선별한 유형을 회원이 원할 시에 재테스트하여 데이터베이스에 업데이트 가능
+    
+    
 ## 시작 가이드
 
 ### Requirements
@@ -27,8 +31,7 @@ For building and running the application you need:
     pip install argon
 
 ## DataBase 구조
-![스크린샷 2023-01-06 오전 1.12.45.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/bcfd620d-7d0d-4963-8026-f322cac53990/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2023-01-06_%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB_1.12.45.png)
-
+<img width="1000" alt="스크린샷_2023-01-06_오전_1 12 45" src="https://github.com/westnowise/i-mseeproject/assets/98007431/0c4e8731-786e-4d72-8010-0cc08dc8b929">
 
 ## Stacks
 
