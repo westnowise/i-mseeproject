@@ -1,5 +1,5 @@
 ## I’ M示
-![스크린샷 2022-11-15 오전 10.28.42.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/0f8da3df-0a01-4367-bd80-d1b50b1eada4/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2022-11-15_%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB_10.28.42.png)
+![스크린샷 2024-01-12 134117](https://github.com/westnowise/i-mseeproject/assets/98007431/20c80be3-debb-4e10-8188-df3290a7a407)
 
 
 한서대학교 항공소프트웨어공학과 데이터베이스
