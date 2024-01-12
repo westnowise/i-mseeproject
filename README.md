@@ -30,26 +30,38 @@ For building and running the application you need:
     pip install pillow
     pip install argon
 
+
 ## DataBase 구조
 <img width="1000" alt="스크린샷_2023-01-06_오전_1 12 45" src="https://github.com/westnowise/i-mseeproject/assets/98007431/0c4e8731-786e-4d72-8010-0cc08dc8b929">
+
 
 ## Stacks
 
 ### Enviroment
 <div>
-    <img src="https://img.shields.io/badge/vscode-007ACC?style=flat-square&logo=visualstudiocode&logoColor=white">  
+    <img src="https://img.shields.io/badge/vscode-007ACC?style=flat-square&logo=visualstudiocode&logoColor=white"> 
+</div>
+
+### Build
+<div>
+    <img src="https://img.shields.io/badge/Gradle-02303A?style=flat-square&logo=gradle&logoColor=white"> 
 </div>
     
     
 ### Development
 <div>
-    <img src="https://img.shields.io/badge/python-3776AB?style=flat-square&logo=python&logoColor=white">
-    <img src="https://img.shields.io/badge/Django-092E20?style=flat-square&logo=django&logoColor=white"> 
+    <img src="https://img.shields.io/badge/python-3776AB?style=flat-square&logo=python&logoColor=white"> 
+    <img src="https://img.shields.io/badge/javascript-F7DF1E?style=flat-square&logo=javascript&logoColor=white">
 </div>
 <div>
     <img src="https://img.shields.io/badge/HTML-E34F26?style=flat-square&logo=html5&logoColor=white"> 
     <img src="https://img.shields.io/badge/css-1572B6?style=flat-square&logo=css3&logoColor=white"> 
     <img src="https://img.shields.io/badge/javascript-F7DF1E?style=flat-square&logo=javascript&logoColor=white">
+</div>
+
+### Framework/Library
+<div>
+    <img src="https://img.shields.io/badge/Django-092E20?style=flat-square&logo=django&logoColor=white">
 </div>
 
 ### DataBase
